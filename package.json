@@ -1,0 +1,29 @@
+{
+  "name": "nirror-refacto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "serve": "webpack-dev-server --content-base public/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "module": "^1.2.5",
+    "node-loader": "^0.6.0",
+    "require_optional": "^1.0.1",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.8",
+    "socket.io": "^2.0.3"
+  }
+}
