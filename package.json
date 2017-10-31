@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "serve": "webpack-dev-server --content-base public/"
+    "build": "webpack --watch",
+    "back": "nodemon ./back/bundle.js",
+    "serve": "npm run build & npm run back & webpack-dev-server --content-base public/ --hot"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "babel-loader": "^7.1.0",
     "module": "^1.2.5",
     "node-loader": "^0.6.0",
+    "ramda": "^0.24.1",
     "require_optional": "^1.0.1",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0",
@@ -22,8 +24,13 @@
   },
   "dependencies": {
     "bluebird": "^3.5.0",
+    "css-selector-generator": "^1.0.2",
     "express": "^4.15.3",
-    "mongoose": "^4.10.8",
+    "lodash": "^4.17.4",
+    "lodash.throttle": "^4.1.1",
+    "mongoose": "^4.11.3",
+    "mutation-summary": "^0.1.1",
+    "nodemon": "^1.11.0",
     "socket.io": "^2.0.3"
   }
 }
